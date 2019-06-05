@@ -31,7 +31,7 @@ slackRouter.get('/', (req: any, res: any) => {
   const connectedBy = req.user.id;
   const returnURI = IS_PROD
     ? 'https://spectrum.chat/api/slack'
-    : 'http://localhost:3001/api/slack';
+    : 'http://18.224.212.70:3001/api/slack';
 
   // generate an oauth token. This token will be used to communicate with the Slack API to get user information, and we'll store the token in the db record to allow for the user to access their Slack team info in the future.
   return generateOAuthToken(code, returnURI)
@@ -48,7 +48,7 @@ slackRouter.get('/', (req: any, res: any) => {
     .then(slug => {
       return IS_PROD
         ? res.redirect(`https://spectrum.chat/${slug}/settings`)
-        : res.redirect(`http://localhost:3000/${slug}/settings`);
+        : res.redirect(`http://18.224.212.70:3000/${slug}/settings`);
     });
 });
 
@@ -59,7 +59,7 @@ slackRouter.get('/onboarding', (req: any, res: any) => {
   const connectedBy = req.user.id;
   const returnURI = IS_PROD
     ? 'https://spectrum.chat/api/slack/onboarding'
-    : 'http://localhost:3001/api/slack/onboarding';
+    : 'http://18.224.212.70:3001/api/slack/onboarding';
 
   // generate an oauth token. This token will be used to communicate with the Slack API to get user information, and we'll store the token in the db record to allow for the user to access their Slack team info in the future.
   return generateOAuthToken(code, returnURI)
@@ -76,7 +76,7 @@ slackRouter.get('/onboarding', (req: any, res: any) => {
     .then(id => {
       return IS_PROD
         ? res.redirect(`https://spectrum.chat/new/community?s=2&id=${id}`)
-        : res.redirect(`http://localhost:3000/new/community?s=2&id=${id}`);
+        : res.redirect(`http://18.224.212.70:3000/new/community?s=2&id=${id}`);
     });
 });
 

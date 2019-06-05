@@ -14,7 +14,7 @@ import isSpectrumUrl from '../../utils/is-spectrum-url';
 const IS_PROD = process.env.NODE_ENV === 'production';
 const FALLBACK_URL = IS_PROD
   ? 'https://spectrum.chat/home'
-  : 'http://localhost:3000/home';
+  : 'http://18.224.212.70:3000/home';
 
 type Strategy = 'twitter' | 'facebook' | 'github' | 'google';
 
@@ -41,7 +41,7 @@ export const createSigninRoutes = (
     // redirecting to the right place and handling tokens
     callbacks: [
       passport.authenticate(strategy, {
-        failureRedirect: IS_PROD ? '/' : 'http://localhost:3000/',
+        failureRedirect: IS_PROD ? '/' : 'http://18.224.212.70:3000/',
       }),
       (req: express$Request, res: express$Response) => {
         // $FlowIssue

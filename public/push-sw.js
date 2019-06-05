@@ -34,7 +34,7 @@ self.addEventListener('push', function(event) {
           if (
             windowClient.focused &&
             // eslint-disable-next-line
-            !(self.registration.scope.indexOf('http://localhost:3000') === 0)
+            !(self.registration.scope.indexOf('http://18.224.212.70:3000') === 0)
           ) {
             return;
           }

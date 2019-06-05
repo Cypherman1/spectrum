@@ -14,7 +14,7 @@ This means we get the best development experience locally with hot module reload
 
 **DO NOT USE THIS UNLESS YOU'RE DEVELOPING SSR**
 
-To test server-side rendering locally run the client and the API locally, and then start Hyperion with `yarn run dev:hyperion`. Open Hyperion's URL, `http://localhost:3006` (instead of `:3000`), which will request the server-side rendered HTML from Hyperion rather than `webpack-dev-server`.
+To test server-side rendering locally run the client and the API locally, and then start Hyperion with `yarn run dev:hyperion`. Open Hyperion's URL, `http://18.224.212.70:3006` (instead of `:3000`), which will request the server-side rendered HTML from Hyperion rather than `webpack-dev-server`.
 
 The downside is that when you're testing SSR and changing the frontend those changes won't be reflected immediately. To get changes from the frontend when you're requesting `localhost:3001` you have to:
 

@@ -9,47 +9,47 @@ describe('Toasts and url query paramaters', () => {
   });
 
   it('should show toast', () => {
-    const url = new URL('http://localhost:3000/me/settings');
+    const url = new URL('http://18.224.212.70:3000/me/settings');
     url.searchParams.append('toastType', 'success');
     url.searchParams.append('toastMessage', toastMessage);
     cy.visit(url.toString());
     cy.get('[data-cy="toast-success"]').contains(toastMessage);
-    cy.url().should('eq', 'http://localhost:3000/users/mxstbr/settings');
+    cy.url().should('eq', 'http://18.224.212.70:3000/users/mxstbr/settings');
   });
 
   it('should not show toast if no toastType', () => {
-    const url = new URL('http://localhost:3000/me/settings');
+    const url = new URL('http://18.224.212.70:3000/me/settings');
     url.searchParams.append('toastMessage', toastMessage);
     cy.visit(url.toString());
     cy.get('[data-cy="toast-success"]').should('have.length', 0);
-    cy.url().should('eq', 'http://localhost:3000/users/mxstbr/settings');
+    cy.url().should('eq', 'http://18.224.212.70:3000/users/mxstbr/settings');
   });
 
   it('should not show toast if no toastMessage', () => {
-    const url = new URL('http://localhost:3000/me/settings');
+    const url = new URL('http://18.224.212.70:3000/me/settings');
     url.searchParams.append('toastType', 'success');
     cy.visit(url.toString());
     cy.get('[data-cy="toast-success"]', { timeout: 1 }).should(
       'have.length',
       0
     );
-    cy.url().should('eq', 'http://localhost:3000/users/mxstbr/settings');
+    cy.url().should('eq', 'http://18.224.212.70:3000/users/mxstbr/settings');
   });
 
   it('should not show toast if invalid toastType', () => {
-    const url = new URL('http://localhost:3000/me/settings');
+    const url = new URL('http://18.224.212.70:3000/me/settings');
     url.searchParams.append('toastType', 'foo');
     cy.visit(url.toString());
     cy.get('[data-cy="toast-success"]', { timeout: 1 }).should(
       'have.length',
       0
     );
-    cy.url().should('eq', 'http://localhost:3000/users/mxstbr/settings');
+    cy.url().should('eq', 'http://18.224.212.70:3000/users/mxstbr/settings');
   });
 
   it('should preserve existing query parameters', () => {
     const url = new URL(
-      'http://localhost:3000/spectrum/general/another-thread~thread-2?m=MTQ4MzIyNTIwMDAwMg=='
+      'http://18.224.212.70:3000/spectrum/general/another-thread~thread-2?m=MTQ4MzIyNTIwMDAwMg=='
     );
     url.searchParams.append('toastType', 'success');
     url.searchParams.append('toastMessage', toastMessage);
@@ -60,7 +60,7 @@ describe('Toasts and url query paramaters', () => {
     );
     cy.url().should(
       'eq',
-      'http://localhost:3000/spectrum/general/another-thread~thread-2?m=MTQ4MzIyNTIwMDAwMg=='
+      'http://18.224.212.70:3000/spectrum/general/another-thread~thread-2?m=MTQ4MzIyNTIwMDAwMg=='
     );
   });
 });

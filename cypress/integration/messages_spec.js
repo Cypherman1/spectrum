@@ -87,7 +87,7 @@ describe('/messages', () => {
     cy.get('[data-cy="compose-dm"]')
       .should('be.visible')
       .click();
-    cy.url().should('eq', 'http://localhost:3000/new/message');
+    cy.url().should('eq', 'http://18.224.212.70:3000/new/message');
   });
 
   it('should select an individual conversation', () => {

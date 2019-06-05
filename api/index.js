@@ -77,7 +77,7 @@ app.use('/', (req: express$Request, res: express$Response) => {
   res.redirect(
     process.env.NODE_ENV === 'production' && !process.env.FORCE_DEV
       ? 'https://spectrum.chat'
-      : 'http://localhost:3000'
+      : 'http://18.224.212.70:3000'
   );
 });
 
@@ -90,7 +90,7 @@ apolloServer.installSubscriptionHandlers(httpServer);
 
 httpServer.listen(PORT);
 
-debug(`GraphQL API running at http://localhost:${PORT}/api`);
+debug(`GraphQL API running at http://18.224.212.70:${PORT}/api`);
 
 process.on('unhandledRejection', async err => {
   console.error('Unhandled rejection', err);

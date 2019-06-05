@@ -20,7 +20,7 @@ import { getChannelsByCommunity, getChannelById } from '../../models/channel';
 
 const rootRedirect = IS_PROD
   ? `https://spectrum.chat`
-  : `http://localhost:3000`;
+  : `http://18.224.212.70:3000`;
 
 // $FlowIssue
 emailRouter.get('/unsubscribe', async (req, res) => {
@@ -198,7 +198,7 @@ emailRouter.get('/validate', (req, res) => {
                 }/settings?toastType=success&toastMessage=Your email address has been validated!`
               )
             : res.redirect(
-                `http://localhost:3000/${
+                `http://18.224.212.70:3000/${
                   community.slug
                 }/settings?toastType=success&toastMessage=Your email address has been validated!`
               )

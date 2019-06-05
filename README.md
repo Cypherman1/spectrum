@@ -199,7 +199,7 @@ The `testing` database used in end to end tests is managed separately. It is bui
 yarn run start:api:test
 ```
 
-To drop the `testing` database, go to http://localhost:8080/#tables while `rethinkdb` is running, and click Delete Database on the appropriate database.
+To drop the `testing` database, go to http://18.224.212.70:8080/#tables while `rethinkdb` is running, and click Delete Database on the appropriate database.
 
 #### Getting the secrets
 

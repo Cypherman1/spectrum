@@ -90,7 +90,7 @@ const init = () => {
         consumerSecret: TWITTER_OAUTH_CLIENT_SECRET,
         callbackURL: IS_PROD
           ? 'https://spectrum.chat/auth/twitter/callback'
-          : 'http://localhost:3001/auth/twitter/callback',
+          : 'http://18.224.212.70:3001/auth/twitter/callback',
         includeEmail: true,
       },
       (token, tokenSecret, profile, done) => {

@@ -191,7 +191,7 @@ module.exports = [
     threadId: 'thread-6',
     threadType: 'story',
     content: {
-      body: `{"blocks":[{"key":"7d3uf","text":"http://localhost:3000/spectrum/general/yet-another-thread~thread-9","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"type":"atomic","data":{},"text":" ","depth":0,"entityRanges":[{"offset":0,"length":1,"key":0}],"inlineStyleRanges":[],"key":"7jad1"},{"type":"unstyled","data":{},"text":" ","depth":0,"entityRanges":[],"inlineStyleRanges":[],"key":"7a0pk"}],"entityMap":{"0":{"data":{"type":"internal","id":"thread-9","entity":"thread"},"mutability":"MUTABLE","type":"embed"}}}`,
+      body: `{"blocks":[{"key":"7d3uf","text":"http://18.224.212.70:3000/spectrum/general/yet-another-thread~thread-9","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"type":"atomic","data":{},"text":" ","depth":0,"entityRanges":[{"offset":0,"length":1,"key":0}],"inlineStyleRanges":[],"key":"7jad1"},{"type":"unstyled","data":{},"text":" ","depth":0,"entityRanges":[],"inlineStyleRanges":[],"key":"7a0pk"}],"entityMap":{"0":{"data":{"type":"internal","id":"thread-9","entity":"thread"},"mutability":"MUTABLE","type":"embed"}}}`,
     },
     messageType: 'draftjs',
     senderId: BRIAN_ID,

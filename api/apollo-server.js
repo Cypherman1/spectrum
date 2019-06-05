@@ -114,7 +114,7 @@ const server = new ProtectedApolloServer({
     },
     tabs: [
       {
-        endpoint: 'http://localhost:3001/api',
+        endpoint: 'http://18.224.212.70:3001/api',
         query: `{
   user(username: "mxstbr") {
     id

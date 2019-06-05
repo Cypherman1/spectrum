@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://localhost:3000",
+  "baseUrl": "http://18.224.212.70:3000",
   "viewportWidth": 1300,
   "defaultCommandTimeout": 20000,
   "blacklistHosts": [

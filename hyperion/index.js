@@ -123,7 +123,7 @@ app.use('/websocket', (req: express$Request, res: express$Response) => {
 // so let's patch that through to it!
 if (process.env.NODE_ENV === 'development') {
   app.use('/sockjs-node', (req: express$Request, res: express$Response) => {
-    res.redirect(301, `http://localhost:3000${req.path}`);
+    res.redirect(301, `http://18.224.212.70:3000${req.path}`);
   });
 }
 
@@ -209,6 +209,6 @@ process.on('uncaughtException', async err => {
 Loadable.preloadAll().then(() => {
   app.listen(PORT);
   debug(
-    `Hyperion, the server-side renderer, running at http://localhost:${PORT}`
+    `Hyperion, the server-side renderer, running at http://18.224.212.70:${PORT}`
   );
 });

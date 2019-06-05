@@ -22,16 +22,16 @@ describe('Community Login View', () => {
 
   it('should render', () => {
     cy.get('[data-cy="community-login-page"]').should('be.visible');
-    cy.get('[href*="/auth/twitter?r=http://localhost:3000/spectrum"]').should(
+    cy.get('[href*="/auth/twitter?r=http://18.224.212.70:3000/spectrum"]').should(
       'be.visible'
     );
-    cy.get('[href*="/auth/facebook?r=http://localhost:3000/spectrum"]').should(
+    cy.get('[href*="/auth/facebook?r=http://18.224.212.70:3000/spectrum"]').should(
       'be.visible'
     );
-    cy.get('[href*="/auth/google?r=http://localhost:3000/spectrum"]').should(
+    cy.get('[href*="/auth/google?r=http://18.224.212.70:3000/spectrum"]').should(
       'be.visible'
     );
-    cy.get('[href*="/auth/github?r=http://localhost:3000/spectrum"]').should(
+    cy.get('[href*="/auth/github?r=http://18.224.212.70:3000/spectrum"]').should(
       'be.visible'
     );
     cy.get('[href*="github.com/withspectrum/code-of-conduct"]').should(
