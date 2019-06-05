@@ -9,9 +9,9 @@ const { resolve } = require('path');
 module.exports = {
   APP_NAME: 'Spectrum',
   APP_VERSION: app.getVersion(),
-  APP_REMOTE_URL: 'https://spectrum.chat/login',
+  APP_REMOTE_URL: 'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/login',
   APP_DEV_URL: 'http://18.224.212.70:3000/login',
-  APP_REMOTE_HOME_URL: 'https://spectrum.chat',
+  APP_REMOTE_HOME_URL: 'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com',
   APP_DEV_HOME_URL: 'http://18.224.212.70:3000',
 
   GITHUB_URL: 'https://github.com/withspectrum/spectrum',

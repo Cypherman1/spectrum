@@ -24,7 +24,7 @@ export const CommunityProfile = ({ community }) => {
         src={community.profilePhoto}
       />
       <ProfileHeaderLink
-        to={`https://spectrum.chat/${community.slug}`}
+        to={`http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/${community.slug}`}
         target={'_blank'}
       >
         <ProfileHeaderMeta>
@@ -48,7 +48,7 @@ export const MiniUserProfile = ({ user }) => {
     <MiniProfileHeader>
       <CommunityAvatar size={16} radius={36} user src={user.profilePhoto} />
       <ProfileHeaderLink
-        to={`https://spectrum.chat/users/${user.username}`}
+        to={`http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/users/${user.username}`}
         target={'_blank'}
       >
         <MiniProfileHeaderMeta>

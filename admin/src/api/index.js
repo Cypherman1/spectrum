@@ -14,7 +14,7 @@ import getSharedApolloClientOptions from './apollo-options';
 const IS_PROD = process.env.NODE_ENV === 'production';
 // In production the API is at the same URL, in development it's at a different port
 const API_URI = IS_PROD
-  ? 'https://spectrum.chat/api'
+  ? 'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/api'
   : 'http://18.224.212.70:3001/api';
 
 const cache = new InMemoryCache({

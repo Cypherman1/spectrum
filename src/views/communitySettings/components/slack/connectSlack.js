@@ -25,14 +25,14 @@ class ImportSlackTeam extends React.Component<Props> {
         }&redirect_uri=${
           process.env.NODE_ENV === 'development'
             ? 'http://18.224.212.70:3001/api/slack/onboarding'
-            : 'https://spectrum.chat/api/slack/onboarding'
+            : 'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/api/slack/onboarding'
         }`
       : `https://slack.com/oauth/authorize?client_id=201769987287.271382863153&scope=users:read.email%20users:read%20chat:write:bot%20groups:read%20channels:read&state=${
           community.id
         }&redirect_uri=${
           process.env.NODE_ENV === 'development'
             ? 'http://18.224.212.70:3001/api/slack'
-            : 'https://spectrum.chat/api/slack'
+            : 'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/api/slack'
         }`;
 
     return (

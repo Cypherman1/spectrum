@@ -40,7 +40,7 @@ const ThreadHead = (props: Props) => {
     >
       <link
         rel="canonical"
-        href={`https://spectrum.chat${getThreadLink(thread)}`}
+        href={`http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com${getThreadLink(thread)}`}
       />
       {metaImage && <meta name="twitter:card" content="summary_large_image" />}
       <meta
@@ -53,7 +53,7 @@ const ThreadHead = (props: Props) => {
       />
       <meta
         property="article:author"
-        content={`https://spectrum.chat/users/@${author.user.username}`}
+        content={`http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/users/@${author.user.username}`}
       />
       <meta
         property="article:section"

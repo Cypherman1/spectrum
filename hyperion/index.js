@@ -99,7 +99,7 @@ app.use('/api', (req: express$Request, res: express$Response) => {
   const redirectUrl = `${req.baseUrl}${req.path}`;
   res.redirect(
     req.method === 'POST' || req.xhr ? 307 : 301,
-    `https://spectrum.chat${redirectUrl}`
+    `http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com${redirectUrl}`
   );
 });
 
@@ -107,7 +107,7 @@ app.use('/auth', (req: express$Request, res: express$Response) => {
   const redirectUrl = `${req.baseUrl}${req.path}`;
   res.redirect(
     req.method === 'POST' || req.xhr ? 307 : 301,
-    `https://spectrum.chat${redirectUrl}`
+    `http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com${redirectUrl}`
   );
 });
 
@@ -115,7 +115,7 @@ app.use('/websocket', (req: express$Request, res: express$Response) => {
   const redirectUrl = `${req.baseUrl}${req.path}`;
   res.redirect(
     req.method === 'POST' || req.xhr ? 307 : 301,
-    `https://spectrum.chat${redirectUrl}`
+    `http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com${redirectUrl}`
   );
 });
 

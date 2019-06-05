@@ -4,7 +4,7 @@ import webPush from 'web-push';
 
 try {
   webPush.setVapidDetails(
-    'https://spectrum.chat',
+    'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com',
     process.env.VAPID_PUBLIC_KEY,
     process.env.VAPID_PRIVATE_KEY
   );

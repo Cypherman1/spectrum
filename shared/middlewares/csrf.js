@@ -3,7 +3,7 @@ import hostValidation from 'host-validation';
 
 // NOTE(@mxstbr):
 // - Host header only contains the domain, so something like 'build-api-asdf123.now.sh' or 'spectrum.chat'
-// - Referer header contains the entire URL, so something like 'https://build-api-asdf123.now.sh/forward' or 'https://spectrum.chat/forward'
+// - Referer header contains the entire URL, so something like 'https://build-api-asdf123.now.sh/forward' or 'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/forward'
 // That means we have to check the Host slightly differently from the Referer to avoid things like 'my-domain-spectrum.chat' to be able to hack our users
 
 // Hosts, without http(s):// and paths

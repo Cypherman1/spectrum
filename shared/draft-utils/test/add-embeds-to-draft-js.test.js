@@ -326,7 +326,7 @@ describe('sites', () => {
   describe('thread urls', () => {
     it('should handle full thread urls', () => {
       const text =
-        'https://spectrum.chat/spectrum/general/hello~4026b1bd-3896-46a4-9ade-e621a90e64ad';
+        'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/spectrum/general/hello~4026b1bd-3896-46a4-9ade-e621a90e64ad';
       expect(getEmbedsFromText(text)).toEqual([
         {
           id: '4026b1bd-3896-46a4-9ade-e621a90e64ad',
@@ -338,7 +338,7 @@ describe('sites', () => {
 
     it('should handle /thread/:id urls', () => {
       const text =
-        'https://spectrum.chat/thread/4026b1bd-3896-46a4-9ade-e621a90e64ad';
+        'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/thread/4026b1bd-3896-46a4-9ade-e621a90e64ad';
       expect(getEmbedsFromText(text)).toEqual([
         {
           id: '4026b1bd-3896-46a4-9ade-e621a90e64ad',
@@ -350,7 +350,7 @@ describe('sites', () => {
 
     it('should handle ?thread urls', () => {
       const text =
-        'https://spectrum.chat/?thread=4026b1bd-3896-46a4-9ade-e621a90e64ad';
+        'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/?thread=4026b1bd-3896-46a4-9ade-e621a90e64ad';
       expect(getEmbedsFromText(text)).toEqual([
         {
           id: '4026b1bd-3896-46a4-9ade-e621a90e64ad',
@@ -362,7 +362,7 @@ describe('sites', () => {
 
     it('should handle ?thread urls with query params before', () => {
       const text =
-        'https://spectrum.chat/?m=asdf&thread=4026b1bd-3896-46a4-9ade-e621a90e64ad';
+        'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/?m=asdf&thread=4026b1bd-3896-46a4-9ade-e621a90e64ad';
       expect(getEmbedsFromText(text)).toEqual([
         {
           id: '4026b1bd-3896-46a4-9ade-e621a90e64ad',
@@ -374,7 +374,7 @@ describe('sites', () => {
 
     it('should handle ?thread urls with query params after', () => {
       const text =
-        'https://spectrum.chat/?thread=4026b1bd-3896-46a4-9ade-e621a90e64ad&m=asdf';
+        'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/?thread=4026b1bd-3896-46a4-9ade-e621a90e64ad&m=asdf';
       expect(getEmbedsFromText(text)).toEqual([
         {
           id: '4026b1bd-3896-46a4-9ade-e621a90e64ad',
@@ -386,7 +386,7 @@ describe('sites', () => {
 
     it('should handle ?t urls', () => {
       const text =
-        'https://spectrum.chat/?t=4026b1bd-3896-46a4-9ade-e621a90e64ad';
+        'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/?t=4026b1bd-3896-46a4-9ade-e621a90e64ad';
       expect(getEmbedsFromText(text)).toEqual([
         {
           id: '4026b1bd-3896-46a4-9ade-e621a90e64ad',
@@ -398,7 +398,7 @@ describe('sites', () => {
 
     it('should handle ?t urls with query params before', () => {
       const text =
-        'https://spectrum.chat/?m=asdf&t=4026b1bd-3896-46a4-9ade-e621a90e64ad';
+        'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/?m=asdf&t=4026b1bd-3896-46a4-9ade-e621a90e64ad';
       expect(getEmbedsFromText(text)).toEqual([
         {
           id: '4026b1bd-3896-46a4-9ade-e621a90e64ad',
@@ -410,7 +410,7 @@ describe('sites', () => {
 
     it('should handle ?t urls with query params after', () => {
       const text =
-        'https://spectrum.chat/?t=4026b1bd-3896-46a4-9ade-e621a90e64ad&m=asdf';
+        'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/?t=4026b1bd-3896-46a4-9ade-e621a90e64ad&m=asdf';
       expect(getEmbedsFromText(text)).toEqual([
         {
           id: '4026b1bd-3896-46a4-9ade-e621a90e64ad',

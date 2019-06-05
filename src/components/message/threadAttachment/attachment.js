@@ -27,7 +27,7 @@ class Attachment extends React.Component<Props> {
 
     if (error || !thread)
       return (
-        <Link to={`/thread/${id}`}>https://spectrum.chat/thread/{id}</Link>
+        <Link to={`/thread/${id}`}>http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/thread/{id}</Link>
       );
 
     return (

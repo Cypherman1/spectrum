@@ -13,7 +13,7 @@ import isSpectrumUrl from '../../utils/is-spectrum-url';
 
 const IS_PROD = process.env.NODE_ENV === 'production';
 const FALLBACK_URL = IS_PROD
-  ? 'https://spectrum.chat/home'
+  ? 'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/home'
   : 'http://18.224.212.70:3000/home';
 
 type Strategy = 'twitter' | 'facebook' | 'github' | 'google';

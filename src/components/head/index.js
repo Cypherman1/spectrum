@@ -21,7 +21,7 @@ export default ({ title, description, image, type, children }: Props) => {
         content={
           image
             ? image
-            : 'https://spectrum.chat/img/apple-icon-144x144-precomposed.png'
+            : 'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/img/apple-icon-144x144-precomposed.png'
         }
       />
       <meta property="og:title" content={title} />
@@ -32,7 +32,7 @@ export default ({ title, description, image, type, children }: Props) => {
         content={
           image
             ? image
-            : 'https://spectrum.chat/img/apple-icon-144x144-precomposed.png'
+            : 'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/img/apple-icon-144x144-precomposed.png'
         }
       />
       {children}

@@ -76,7 +76,7 @@ apolloServer.applyMiddleware({ app, path: '/api', cors: corsOptions });
 app.use('/', (req: express$Request, res: express$Response) => {
   res.redirect(
     process.env.NODE_ENV === 'production' && !process.env.FORCE_DEV
-      ? 'https://spectrum.chat'
+      ? 'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com'
       : 'http://18.224.212.70:3000'
   );
 });

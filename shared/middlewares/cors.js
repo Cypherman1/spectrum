@@ -5,7 +5,7 @@ export const corsOptions = {
   origin:
     process.env.NODE_ENV === 'production' && !process.env.FORCE_DEV
       ? [
-          'https://spectrum.chat',
+          'http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com',
           'https://alpha.spectrum.chat',
           'https://admin.spectrum.chat',
           'https://hyperion.workers.spectrum.chat',

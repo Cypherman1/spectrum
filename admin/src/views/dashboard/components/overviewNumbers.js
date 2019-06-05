@@ -24,7 +24,7 @@ import {
 
 const IS_PROD = process.env.NODE_ENV === 'production';
 const LOGIN_URL = IS_PROD
-  ? `https://spectrum.chat/auth/twitter?r=https://${window.location.host}`
+  ? `http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com/auth/twitter?r=https://${window.location.host}`
   : 'http://18.224.212.70:3001/auth/twitter?r=http://18.224.212.70:3000';
 
 const OverviewNumbers = ({ data }) => {
