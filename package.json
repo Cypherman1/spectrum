@@ -289,7 +289,7 @@
     "webpack-defaults": "webpack-defaults",
     "process:emails:test": "(cd email-template-scripts && python3 inline-html-emails.py && node sendgrid-sync.js)",
     "process:emails:prod": "(cd email-template-scripts && python3 inline-html-emails.py && node sendgrid-sync.js prod)",
-    "process:emails:send": "(cd email-template-scripts && node send-test-emails.js brian@spectrum.chat)",
+    "process:emails:send": "(cd email-template-scripts && node send-test-emails.js brian@ec2-18-224-212-70.us-east-2.compute.amazonaws.com)",
     "deploy": "node scripts/deploy"
   },
   "lint-staged": {

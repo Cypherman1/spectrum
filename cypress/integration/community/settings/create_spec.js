@@ -28,13 +28,13 @@ describe('creating a public community', () => {
       .scrollIntoView()
       .should('be.visible')
       .click()
-      .type('spectrum.chat');
+      .type('ec2-18-224-212-70.us-east-2.compute.amazonaws.com');
 
     cy.get('[data-cy="community-website-input"]')
       .scrollIntoView()
       .should('be.visible')
       .click()
-      .type('spectrum.chat');
+      .type('ec2-18-224-212-70.us-east-2.compute.amazonaws.com');
 
     cy.get('[data-cy="community-public-selector-input"]')
       .scrollIntoView()
@@ -84,13 +84,13 @@ describe('creating a private community', () => {
       .scrollIntoView()
       .should('be.visible')
       .click()
-      .type('spectrum.chat');
+      .type('ec2-18-224-212-70.us-east-2.compute.amazonaws.com');
 
     cy.get('[data-cy="community-website-input"]')
       .scrollIntoView()
       .should('be.visible')
       .click()
-      .type('spectrum.chat');
+      .type('ec2-18-224-212-70.us-east-2.compute.amazonaws.com');
 
     cy.get('[data-cy="community-public-selector-input"]')
       .scrollIntoView()

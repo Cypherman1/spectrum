@@ -28,7 +28,7 @@ class Privacy extends React.Component<{}> {
           <Section>
             <SectionDescription>
               GitHub, Inc. (“GitHub”, “us”, “we”, or “our”) operates the
-              spectrum.chat website (the “Service”).
+              ec2-18-224-212-70.us-east-2.compute.amazonaws.com website (the “Service”).
             </SectionDescription>
 
             <SectionDescription>
@@ -43,7 +43,7 @@ class Privacy extends React.Component<{}> {
               accordance with this policy. Unless otherwise defined in this
               Privacy Policy, terms used in this Privacy Policy have the same
               meanings as in our Terms and Conditions, accessible from
-              spectrum.chat.
+              ec2-18-224-212-70.us-east-2.compute.amazonaws.com.
             </SectionDescription>
           </Section>
 
@@ -51,7 +51,7 @@ class Privacy extends React.Component<{}> {
             <SectionTitle>Definitions</SectionTitle>
 
             <SectionDescription>
-              “Service” is the spectrum.chat website operated by GitHub.
+              “Service” is the ec2-18-224-212-70.us-east-2.compute.amazonaws.com website operated by GitHub.
             </SectionDescription>
 
             <SectionDescription>
@@ -582,7 +582,7 @@ class Privacy extends React.Component<{}> {
             <SectionDescription>
               If you have any questions about this Privacy Policy, please
               contact us by email:{' '}
-              <a href="mailto:help@spectrum.chat">help@spectrum.chat</a>
+              <a href="mailto:help@ec2-18-224-212-70.us-east-2.compute.amazonaws.com">help@ec2-18-224-212-70.us-east-2.compute.amazonaws.com</a>
             </SectionDescription>
           </Section>
         </ContentContainer>

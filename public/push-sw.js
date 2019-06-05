@@ -77,13 +77,13 @@ self.addEventListener('notificationclick', function(event) {
         includeUncontrolled: true,
       })
       .then(function(clientList) {
-        // If there is an open Spectrum.chat window navigate to the notification href
+        // If there is an open ec2-18-224-212-70.us-east-2.compute.amazonaws.com window navigate to the notification href
         if (clientList.length > 0) {
           return clientList[0]
             .focus()
             .then(client => client.navigate(urlToOpen));
         }
-        // If there's no open Spectrum.chat window open a new one
+        // If there's no open ec2-18-224-212-70.us-east-2.compute.amazonaws.com window open a new one
         // eslint-disable-next-line
         return self.clients.openWindow(urlToOpen);
       })

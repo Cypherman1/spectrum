@@ -4,7 +4,7 @@
   "homepage": "http://ec2-18-224-212-70.us-east-2.compute.amazonaws.com",
   "author": {
     "name": "Space Program Inc.",
-    "email": "hi@spectrum.chat"
+    "email": "hi@ec2-18-224-212-70.us-east-2.compute.amazonaws.com"
   },
   "repository": "https://github.com/withspectrum/spectrum",
   "version": "1.0.5",

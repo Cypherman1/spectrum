@@ -27,7 +27,7 @@ class Terms extends React.Component<{}> {
           <Section>
             <SectionDescription>
               These terms of service ("Terms") apply to your access and use of
-              Spectrum.chat (the "Service"). Please read them carefully.
+              ec2-18-224-212-70.us-east-2.compute.amazonaws.com (the "Service"). Please read them carefully.
             </SectionDescription>
           </Section>
 
@@ -40,7 +40,7 @@ class Terms extends React.Component<{}> {
               read all of the terms. If you don’t agree to all of the terms
               below, please do not use the Service. Also, if a term does not
               make sense to you, please let us know by e-mailing
-              support@spectrum.chat.
+              support@ec2-18-224-212-70.us-east-2.compute.amazonaws.com.
             </SectionDescription>
           </Section>
 
@@ -401,7 +401,7 @@ class Terms extends React.Component<{}> {
             <SectionDescription>
               Questions or comments about the Service may be directed to us at
               the email address{' '}
-              <a href="mailto:support@spectrum.chat">support@spectrum.chat</a>.
+              <a href="mailto:support@ec2-18-224-212-70.us-east-2.compute.amazonaws.com">support@ec2-18-224-212-70.us-east-2.compute.amazonaws.com</a>.
             </SectionDescription>
           </Section>
         </ContentContainer>

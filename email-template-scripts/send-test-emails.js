@@ -21,7 +21,7 @@ sg.setApiKey(SENDGRID_API_KEY);
 const sendEmail = (templateId, dynamic_template_data) => {
   return sg.send({
     from: {
-      email: 'hi@spectrum.chat',
+      email: 'hi@ec2-18-224-212-70.us-east-2.compute.amazonaws.com',
       name: 'Spectrum',
     },
     tracking_settings: {

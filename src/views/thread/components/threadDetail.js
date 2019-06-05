@@ -113,7 +113,7 @@ class ThreadDetailPure extends React.Component<Props, State> {
       body: null,
     });
 
-    fetch('https://convert.spectrum.chat/to', {
+    fetch('https://convert.ec2-18-224-212-70.us-east-2.compute.amazonaws.com/to', {
       method: 'POST',
       body: thread.content.body,
     })

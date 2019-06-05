@@ -1,6 +1,6 @@
 # Desktop
 
-This folder contains the [Electron](https://electronjs.org/)-based desktop app for Spectrum. Electron renders a web view, which renders the main `Spectrum.chat` webpage.
+This folder contains the [Electron](https://electronjs.org/)-based desktop app for Spectrum. Electron renders a web view, which renders the main `ec2-18-224-212-70.us-east-2.compute.amazonaws.com` webpage.
 
 ## Directory Structure
 

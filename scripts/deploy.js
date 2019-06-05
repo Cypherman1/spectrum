@@ -87,10 +87,10 @@ if (servers.length > 0) {
 
     const alias =
       server === 'api'
-        ? `api.${!flags.prod ? 'alpha.' : ''}spectrum.chat`
+        ? `api.${!flags.prod ? 'alpha.' : ''}ec2-18-224-212-70.us-east-2.compute.amazonaws.com`
         : `${server}.${
             flags.prod === true ? 'workers' : 'alpha'
-          }.spectrum.chat`;
+          }.ec2-18-224-212-70.us-east-2.compute.amazonaws.com`;
     console.log(`Aliasing ${stdout.toString()} to ${alias}...`);
     exec(now(`alias ${stdout.toString()} ${alias}`), {
       cwd: buildDir,
@@ -105,7 +105,7 @@ if (servers.length > 0) {
         now(
           `alias -r rules${!flags.prod ? '-alpha' : ''}.json ${
             !flags.prod ? 'alpha.' : ''
-          }spectrum.chat`
+          }ec2-18-224-212-70.us-east-2.compute.amazonaws.com`
         ),
         {
           stdio: 'inherit',

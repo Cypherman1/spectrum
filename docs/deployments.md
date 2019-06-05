@@ -16,7 +16,7 @@ npm install -g now
 
 ### Naming scheme
 
-All our workers are aliased to `<workername>.workers.spectrum.chat`, with the one exception being the API (the API server) which runs at `api.spectrum.chat`.
+All our workers are aliased to `<workername>.workers.ec2-18-224-212-70.us-east-2.compute.amazonaws.com`, with the one exception being the API (the API server) which runs at `api.ec2-18-224-212-70.us-east-2.compute.amazonaws.com`.
 
 #### Path aliases
 
@@ -25,7 +25,7 @@ All our workers are aliased to `<workername>.workers.spectrum.chat`, with the on
 To deploy new rules, simply run the following command: (assuming `rules.json` has the changes)
 
 ```sh
-now alias spectrum.chat -r rules.json
+now alias ec2-18-224-212-70.us-east-2.compute.amazonaws.com -r rules.json
 ```
 
 The same command with a different URL and slightly adapted rules can also be used to create an alpha/beta/staging/... version of the site.
@@ -54,10 +54,10 @@ This will do an _immutable deploy_ of the hyperion and will return a unique URL 
 
 Third, test that version of the app to make sure the new feature(s) work(s) as expected in production. Note that nobody except for people will access to the unique URL from the last step can access it at this point.
 
-Fourth, if you're happy with the new feature(s) alias your unique URL to `hyperion.workers.spectrum.chat` to make it immediately available to all users:
+Fourth, if you're happy with the new feature(s) alias your unique URL to `hyperion.workers.ec2-18-224-212-70.us-east-2.compute.amazonaws.com` to make it immediately available to all users:
 
 ```
-now alias spectrum-grtertb34.now.sh hyperion.workers.spectrum.chat
+now alias spectrum-grtertb34.now.sh hyperion.workers.ec2-18-224-212-70.us-east-2.compute.amazonaws.com
 ```
 
 And that's it, you've now deployed a new version of hyperion and the frontend!
@@ -95,16 +95,16 @@ This will give you an immutable deploy with a unique URL of this worker, somethi
 
 #### Replacing the old deploy
 
-Since we want to keep the workers alive even if nobody sends a request to their healthcheck endpoints we alias them to `<workername>.workers.spectrum.chat`. This ensures `now` overrides the older deploy and only the newest code is running.
+Since we want to keep the workers alive even if nobody sends a request to their healthcheck endpoints we alias them to `<workername>.workers.ec2-18-224-212-70.us-east-2.compute.amazonaws.com`. This ensures `now` overrides the older deploy and only the newest code is running.
 
 To alias your deploy run `now alias`:
 
 ```sh
-now alias <uniqueurl>.now.sh <workername>.workers.spectrum.chat
+now alias <uniqueurl>.now.sh <workername>.workers.ec2-18-224-212-70.us-east-2.compute.amazonaws.com
 ```
 
 For example, for our `athena` deploy from above this would be:
 
 ```sh
-now alias build-athena-ahsgut23sdyf.now.sh athena.workers.spectrum.chat
+now alias build-athena-ahsgut23sdyf.now.sh athena.workers.ec2-18-224-212-70.us-east-2.compute.amazonaws.com
 ```

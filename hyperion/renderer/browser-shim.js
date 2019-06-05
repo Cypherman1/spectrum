@@ -4,7 +4,7 @@
 global.window = {
   location: {
     protocol: 'https:',
-    host: 'spectrum.chat',
+    host: 'ec2-18-224-212-70.us-east-2.compute.amazonaws.com',
     hash: '',
   },
   addEventListener: () => {},

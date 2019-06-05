@@ -1,11 +1,11 @@
 {
   "rules": [
-    { "pathname": "/api", "dest": "api.spectrum.chat" },
-    { "pathname": "/api/**", "dest": "api.spectrum.chat" },
-    { "pathname": "/auth", "dest": "api.spectrum.chat" },
-    { "pathname": "/auth/**", "dest": "api.spectrum.chat" },
-    { "pathname": "/websocket", "dest": "api.spectrum.chat" },
-    { "pathname": "/websocket/**", "dest": "api.spectrum.chat" },
-    { "dest": "hyperion.workers.spectrum.chat" }
+    { "pathname": "/api", "dest": "api.ec2-18-224-212-70.us-east-2.compute.amazonaws.com" },
+    { "pathname": "/api/**", "dest": "api.ec2-18-224-212-70.us-east-2.compute.amazonaws.com" },
+    { "pathname": "/auth", "dest": "api.ec2-18-224-212-70.us-east-2.compute.amazonaws.com" },
+    { "pathname": "/auth/**", "dest": "api.ec2-18-224-212-70.us-east-2.compute.amazonaws.com" },
+    { "pathname": "/websocket", "dest": "api.ec2-18-224-212-70.us-east-2.compute.amazonaws.com" },
+    { "pathname": "/websocket/**", "dest": "api.ec2-18-224-212-70.us-east-2.compute.amazonaws.com" },
+    { "dest": "hyperion.workers.ec2-18-224-212-70.us-east-2.compute.amazonaws.com" }
   ]
 }

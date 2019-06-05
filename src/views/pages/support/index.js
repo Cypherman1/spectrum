@@ -108,7 +108,7 @@ class Support extends React.Component<{}> {
               </div>
 
               <OutlineButton
-                href="mailto:hi@spectrum.chat"
+                href="mailto:hi@ec2-18-224-212-70.us-east-2.compute.amazonaws.com"
                 onClick={() => track(events.SUPPORT_PAGE_EMAIL_US)}
               >
                 Email us

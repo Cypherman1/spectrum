@@ -51,7 +51,7 @@ export default (props: Props) => {
 
     if (show) {
       setPreviewBody(null);
-      fetch('https://convert.spectrum.chat/from', {
+      fetch('https://convert.ec2-18-224-212-70.us-east-2.compute.amazonaws.com/from', {
         method: 'POST',
         body,
       })

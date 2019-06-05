@@ -264,7 +264,7 @@ class CommunityWithData extends React.Component<Props, State> {
             Name
           </Input>
           <UnderlineInput defaultValue={slug} disabled>
-            spectrum.chat/
+            ec2-18-224-212-70.us-east-2.compute.amazonaws.com/
           </UnderlineInput>
 
           {nameError && (

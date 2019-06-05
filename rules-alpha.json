@@ -1,12 +1,12 @@
 {
   "rules": [
-    { "pathname": "/robots.txt", "dest": "robots.alpha.spectrum.chat" },
-    { "pathname": "/api", "dest": "api.alpha.spectrum.chat" },
-    { "pathname": "/api/**", "dest": "api.alpha.spectrum.chat" },
-    { "pathname": "/auth", "dest": "api.alpha.spectrum.chat" },
-    { "pathname": "/auth/**", "dest": "api.alpha.spectrum.chat" },
-    { "pathname": "/websocket", "dest": "api.alpha.spectrum.chat" },
-    { "pathname": "/websocket/**", "dest": "api.alpha.spectrum.chat" },
-    { "dest": "hyperion.alpha.spectrum.chat" }
+    { "pathname": "/robots.txt", "dest": "robots.alpha.ec2-18-224-212-70.us-east-2.compute.amazonaws.com" },
+    { "pathname": "/api", "dest": "api.alpha.ec2-18-224-212-70.us-east-2.compute.amazonaws.com" },
+    { "pathname": "/api/**", "dest": "api.alpha.ec2-18-224-212-70.us-east-2.compute.amazonaws.com" },
+    { "pathname": "/auth", "dest": "api.alpha.ec2-18-224-212-70.us-east-2.compute.amazonaws.com" },
+    { "pathname": "/auth/**", "dest": "api.alpha.ec2-18-224-212-70.us-east-2.compute.amazonaws.com" },
+    { "pathname": "/websocket", "dest": "api.alpha.ec2-18-224-212-70.us-east-2.compute.amazonaws.com" },
+    { "pathname": "/websocket/**", "dest": "api.alpha.ec2-18-224-212-70.us-east-2.compute.amazonaws.com" },
+    { "dest": "hyperion.alpha.ec2-18-224-212-70.us-east-2.compute.amazonaws.com" }
   ]
 }

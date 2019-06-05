@@ -222,7 +222,7 @@ class ThreadFeedPure extends React.Component<Props, State> {
         <ViewError
           heading={'We ran into an issue loading the feed'}
           subheading={
-            'Try refreshing the page below. If you’re still seeing this error, you can email us at hi@spectrum.chat.'
+            'Try refreshing the page below. If you’re still seeing this error, you can email us at hi@ec2-18-224-212-70.us-east-2.compute.amazonaws.com.'
           }
           refresh
         />

@@ -22,7 +22,7 @@ function securityMiddleware(
         // 5 mins in seconds
         // we will scale this up incrementally to ensure we dont break the
         // app for end users
-        // see deployment recommendations here https://hstspreload.org/?domain=spectrum.chat
+        // see deployment recommendations here https://hstspreload.org/?domain=ec2-18-224-212-70.us-east-2.compute.amazonaws.com
         maxAge: 300,
         includeSubDomains: true,
         preload: true,
